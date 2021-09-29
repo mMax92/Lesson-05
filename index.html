@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Селекторы</h1>
+    <p class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, sed et. Eum error omnis mollitia esse minus facilis ipsa dolores rem explicabo. Odio fugiat natus earum minima voluptatum harum laborum!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam enim odit in, velit doloribus voluptas possimus aperiam aliquam, consequatur, illum atque cupiditate esse deserunt. Accusamus tempore dignissimos tenetur provident est.
+    </p>
+    <ol class="list">
+        <li class="item">
+            Селектор по элементу: p {} - селектор по тегу p, будет применять свойства ко всем элементам списка p;
+        </li>
+        <li class="text">
+            Селектор по идентификатору: #title {} - селектор по id "title", будет применять свойства только к одному элементу, который имеет id "title";
+        </li>
+        <li>
+            Селектор по классу:<br>
+            .text {} - селектор по классу "text", будет применять свойства ко всем элементам с классом "text";<br>
+            p.text {} - селектор по классу "text" для абзацев "р", будет применять свойства ко всем абзацам (тег "р") с классом "text";
+        </li>
+        <li class="text big">
+            Селектор по нескольким классам: .text.big {} - селектор по классу "text" и "big", будет применять свойства ко всем элементам, которые имеют одновременно класс "text" и "big";
+        </li>
+        <li>
+            Универсальный селектор: * - применяет свойства ко всем элементам на странице;
+        </li>
+        <li class="text medium">
+            Вложенные селекторы: ul li - применяют свойства к элементам, согласно прописанному <b>"пути"</b> вложенности, где ul - родительский элемент, li - дочерний элемент (не все элементы можно вложить один в другой);
+        </li>
+        <li>
+            Дочерние селекторы: .list > .item - свойства применятся к элементу с классом ".item", который вложен непосредственно в элемент с классом ".list";
+        </li>
+        <li class="medium-size">
+            Соседние селекторы: i + b - свойства применятся к элементу с тегом b, который по коду идет сразу за элементом с тегом i;
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id totam eligendi iusto sint <i>consectetur</i> <b>necessitatibus</b> facere. Quaerat amet eaque, magni recusandae possimus quia sunt doloremque error quasi maxime. Commodi, fugiat!
+            </p>
+        </li>
+        <li>
+            Родственные селекторы: h1 ~ p - свойства применятся к элементам с тегом p, которые идут после элемента с тегом h1 и имеют с ним общего родителя;
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id totam eligendi iusto sint consectetur <b>necessitatibus</b> facere. Quaerat amet eaque, <q>magni recusandae possimus quia sunt doloremque error quasi maxime. Commodi, fugiat!</q>
+            </p>
+        </li>
+        <li>
+            Селекторы атрибутов: [href] - применяются к элементам, у которых есть атрибут [href];<br>
+            <ul>
+                <li>
+                    a[target="_blank"] - свойства применятся к элементу "a" с атрибутом "target", который равен "_blank";
+                </li>
+                <li>
+                    [href^="https"] - свойства применятся к элементам с атрибутом href, название которого начинается с "https";
+                </li>
+                <li>
+                    [href$="com"] - свойства применятся к элементам с атрибутом href, название которого заканчивается с "com";
+                </li>
+                <li>
+                    [href*="oo"] - свойства применятся к элементам с атрибутом  href, название которого содержит "oo";
+                </li>
+                <li>
+                    [class~="medium"] - свойства применятся к элементам с атрибутом class, название которого содержит "medium";
+                </li>
+                <li>
+                    [class|="medium"] - свойства применятся к элементам с атрибутом class, название которого начинается с "medium", за которым идет дефис, либо именно так и называется;
+                </li>
+            </ul>
+            <a href="https://www.facebook.com" target="_blank">Go to Facebook</a>
+            <a href="link" target="_blank">Go to link</a>
+            <a href="https://www.ithillel.ua" target="_blank">Go to Hillel School</a>
+            <a href="https://www.google.com" target="_blank">Go to Google</a>
+        </li>
+    </ol>
+</body>
+</html>

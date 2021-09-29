@@ -1,0 +1,75 @@
+h1 {
+    text-align: center;
+}
+
+p {
+    color: red;
+}
+
+#title {
+    color:blue;
+}
+
+.text {
+    color: slateblue;
+}
+
+.text.big {
+    color: yellowgreen;
+}
+
+.link {
+    color: tomato;
+}
+
+p.text {
+    color: turquoise;
+}
+
+* {
+    color: black;
+}
+
+ul li {
+    color: blueviolet;
+}
+
+.list > .item {
+    color: green;
+}
+
+i + b {
+    color: gray;
+}
+
+h1 ~ p {
+    color: indigo;
+}
+
+[href] {
+    color: lawngreen;
+}
+
+a[target=_blank] {
+    font-size: 30px;
+}
+
+[href^="https"] {
+    color: lightcoral;
+}
+
+[href$="com"] {
+    color: gold;
+}
+
+[href*="oo"] {
+    color: cyan;
+}
+
+[class~="medium"] {
+    color: lightblue;
+}
+
+[class|="medium"] {
+    color: darkred;
+}
